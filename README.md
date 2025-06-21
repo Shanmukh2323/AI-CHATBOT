@@ -44,3 +44,8 @@ Google Generative AI (Gemini 1.5)
 
 SQLite, dotenv
 
+![Screenshot 2025-06-21 151039](https://github.com/user-attachments/assets/50ba3e08-fd57-4c79-bc1f-f116d0ec629f)
+![Screenshot 2025-06-21 151100](https://github.com/user-attachments/assets/734f04cb-d2b1-4c03-8987-e554bf3d2f58)
+
+
+
