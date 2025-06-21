@@ -1,22 +1,20 @@
-# AI-CHATBOT
-# 🤖 AI Chatbot – Streamlit App with User Login and Chat History
+🤖 AI Chatbot with User Login & Chat History (Streamlit + Gemini 1.5)
+This is a full-stack AI chatbot application built with Streamlit and Google's Gemini 1.5 API, featuring:
 
-This project is a full-stack AI chatbot built using **Google Gemini 1.5 API** and **Streamlit**, designed with a clean UI, persistent user login, and chat history storage via **SQLite**.
+🔐 User login system using session state
 
----
+🧠 Gemini 1.5 model integration (Free API key)
 
-## 🚀 Features
+💬 Chat UI with user/model bubbles
 
-- 🔐 **User Login System** — Each user has their own chat history.
-- 💬 **Conversational Chat Interface** — With user/model chat bubbles.
-- 🧠 **Gemini 1.5 API Integration** — Leverages the free tier of Google’s GenAI models.
-- 💾 **Chat History Storage** — Messages saved in a local SQLite database per user.
-- 🔐 **Secure API Key Handling** — Uses `.env` for safe environment variable access.
+📦 SQLite database for storing chat history by user
 
----
+🔐 Environment-safe .env setup for API keys
 
-## 📁 Project Structure
-
+📁 Project Structure
+bash
+Copy
+Edit
 ai-chatbot/
 ├── pages/
 │   └── chatbot.py           # Main chat UI logic
@@ -25,53 +23,24 @@ ai-chatbot/
 ├── .env                     # Stores Gemini API key
 ├── requirements.txt         # Python dependencies
 └── README.md
+🚀 How to Run
+Clone the repo
 
-## ⚙️ Getting Started
+Create .env file with GEMINI_API_KEY=your-key-here
 
-### 1. Clone the Repository
+Run:
 
-git clone https://github.com/your-username/ai-chatbot.git
-cd ai-chatbot
-2. Create and Activate Virtual Environment
 bash
 Copy
 Edit
 python -m venv venv
-venv\Scripts\activate       # On Windows
-# source venv/bin/activate  # On Mac/Linux
-3. Install Dependencies
-bash
-Copy
-Edit
+venv\Scripts\activate       # For Windows
 pip install -r requirements.txt
-4. Add Your Gemini API Key
-Create a .env file and add your Google API key:
-
-ini
-Copy
-Edit
-GEMINI_API_KEY=your-api-key-here
-You can get a free Gemini API key from: https://makersuite.google.com/app/apikey
-
-5. Run the App
-bash
-Copy
-Edit
 streamlit run login_page.py
 🧠 Tech Stack
-Frontend: Streamlit
+Python, Streamlit
 
-Backend: Python
+Google Generative AI (Gemini 1.5)
 
-LLM API: Gemini 1.5 (via google.generativeai)
+SQLite, dotenv
 
-Database: SQLite
-
-Security: python-dotenv for secrets
-
-
-📌 To Do
- Add password encryption and user signup
-
-📄 License
-This project is licensed under the MIT License.
